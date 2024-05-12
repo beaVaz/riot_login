@@ -1,0 +1,42 @@
+
+footer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #08080800;
+
+}
+
+.links-servicos a, .links-servicos label, footer p{
+    padding: 10px;
+    font-size: 0.8em;
+    font-weight: 600;   
+    color: #d8d8d8;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+select{
+    background-color: #ffffffb9;
+    border: none;
+    width: 18px;
+    border-radius: 5px;
+}
+
+option{
+    font-size: 1em;
+    font-weight: 500;
+    color: rgb(19, 19, 19);
+}
+
+footer p a{
+    padding: 3px;
+    font-weight: 600;   
+    color: #d8d8d8;
+    text-transform: uppercase;
+    text-decoration: underline;
+
+
+}
+
+

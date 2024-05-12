@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/footerstyle.css">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/formstyle.css">
+    <title>Fazer login</title>
+</head>
+
+<body> 
+     <header>
+        <a href="#"><img src="./assets/images/Riot_Games-Logo.wine.png" alt="logo-riot_games" id="top_logo_riot"></a>
+    </header>
+    
+    <main id="main-form">
+        <h1>Fazer login</h1>
+        <form action="" method="post">
+            <label for="username">NOME DE USUÁRIO</label>
+            <input type="text" name="nicknameUser" id="username">
+            <label for="password">SENHA</label>
+            <input type="password" name="passwordUser" id="password" autocomplete="off">
+            <input type="submit" onclick="logar(); return false"> 
+        </form>
+
+        <section>
+            <article id="svg-FC"><img src="./assets/svgs/icons8-facebook-novo.svg" alt=""><a href=""></a></img></article>
+            <article id="svg-GOO"><img src="./assets/svgs/icons8-google-logo.svg" alt=""><a href=""></a></img></article>
+            <article id="svg-MAC"><img src="./assets/svgs/icons8-mac-os.svg" alt=""><a href=""></a></img></article>
+            <article id="svg-XBOX"><img src="./assets/svgs/icons8-xbox.svg" alt=""><a href=""></a></img></article>
+        </section>
+
+    <form action="" id="checkbox-login" method="get">
+        <input type="checkbox" name="checkbox-manterLogin" id="manterLogin" class="largerCheckbox">
+        <label for="manterLogin">Manter login</label>  
+    </form>
+   
+    <a href="#" class="links-de-cadastro">NÃO CONSEGUE FAZER LOGIN?</a>
+    <a href="#" class="links-de-cadastro">CRIAR CONTA</a>
+    </main>
+
+    <footer>
+        <div class="links-servicos">
+        <a href="#">suporte</a>
+        <a href="#">aviso de privacidade</a>
+        <a href="#">termos de serviço</a>
+        <a href="#">preferências de cookies</a>
+
+        <label for="language">language</label>
+        <select id="language" name="page_lang">
+            <option value="EN">English</option>
+            <option value="PT-BR">Português do Brasil</option>
+            <option value="amex">Espanõl</option>
+          </select>
+        </div>
+
+        <p>ESTE SITE É PROTEGIDO POR HCAPTCHA. A <a href="#">POLÍTICA DE PRIVACIDADE</a> E OS <a href="#">TERMOS DE SERVIÇO</a> RELEVANTES SÃO APLICÁVEIS.</p>
+    </footer>
+
+<script src="./javascript/script.js"></script>
+
+<script>
+function logar(){
+
+    var login = document.getElementById('username').value;
+    var senha = document.getElementById('password').value;
+
+    if(login == "admin" && senha == "admin"){
+        alert('Sucesso');
+        location.href = "home.html";
+    }else{
+        alert('Usuario ou senha incorretos');
+    }
+
+}
+
+</script>
+
+</body>
+</html>
