@@ -99,19 +99,30 @@ input.largerCheckbox{
     font-size: 0.8em;
     font-weight: 400;
 }
-
-button img{
-    width: 50px;
-    height: 50px;
-}
-button{
+#submit_button {
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 15px;
     margin: 30px 0;
-    background-color: #f13030;
     border: none;
     border-radius: 35%;
+}
+
+#submit_button input{
+    background-image: url(/assets/images/icons8-seta-direita-100.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 50%;
+    padding: 20px;
+    height: 100px;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f13030;
+    border-radius: 10px;
 }
 
 .links-de-cadastro{
@@ -119,8 +130,7 @@ button{
     font-size: 0.7em;
     text-decoration: none;
     color: #4d4d4d;
-    font-weight: 700;
-
+   font-weight: 700;
 }
 
 
