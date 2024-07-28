@@ -1,15 +1,15 @@
 #top_logo_riot{
-    width: 200px;   
+    width: 150px;   
 }
 
 #main-form{
-    width: 40%;
+    width: 35%;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #f5f5f5;
     padding: 1em;
-    margin: 10% 33%;
+    margin: 8% 33%;
     min-width: 15em;
 }
 
@@ -19,22 +19,26 @@ form{
     justify-content: center;
     width: 80%;
     min-width: 30%;
+    border-radius: 20px;
 }
 
 label{
-    font-size: 0.7em;
-    font-weight: 700;
+    font-size: 0.6em;
+    font-weight: 800;
     color: #4d4d4d;
 }
 input{
-    padding: 9px;
+    padding: 10px;
     margin-bottom: 15px;
-    background-color: #d8d8d8;
+    background-color: transparent;
     border: none;
     border-radius: 3px;
     font-size: 0.9em;
     color: #1b1b1b;
     font-weight: 600;
+}
+input:hover{
+    background-color:#4d4d4d1f;
 }
 
 h1{
@@ -54,8 +58,8 @@ article{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 35px;
+    width: 80%;
+    height: 30px;
     background-color: #4d4d4d;
     border-radius: 10px;
     margin-top: 5%;   
@@ -83,28 +87,35 @@ article img{
 }
 
 #checkbox-login{
-    margin: 20px 0;
+    margin: 13px 0;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    align-items: center;
     gap: 5px;
 }
 
 input.largerCheckbox{
-    width: 18px;
-    height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 16px;
     border-radius: 5%;
+    margin: 13px 0;
 }
 #checkbox-login label{
-    font-size: 0.8em;
-    font-weight: 400;
+    font-size: 11px;
+    font-weight: 600;
+    color: rgba(74, 74, 74);
+    text-transform: uppercase;
 }
 #submit_button {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 15px;
-    margin: 30px 0;
+    padding: 10px;
+    margin: 10px 0;
     border: none;
     border-radius: 35%;
 }
@@ -113,24 +124,24 @@ input.largerCheckbox{
     background-image: url(/assets/images/icons8-seta-direita-100.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
-    width: 50%;
-    padding: 20px;
-    height: 100px;
-    margin-top: 50px;
+    background-size:29px;
+    width: 25%;
+    min-width: 88px;
+    padding: 5px;
+    height: 78px;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #f13030;
-    border-radius: 10px;
+    border-radius: 25px;
 }
 
 .links-de-cadastro{
     margin-bottom: 5px;
-    font-size: 0.7em;
+    font-size: 0.6em;
     text-decoration: none;
-    color: #4d4d4d;
-   font-weight: 700;
+    color: rgba(74, 74, 74);
+   font-weight: 800;
 }
 
 
